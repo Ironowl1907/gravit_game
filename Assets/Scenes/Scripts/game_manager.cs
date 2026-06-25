@@ -12,6 +12,10 @@ public class GameManager : MonoBehaviour
 
     public int Score { get; private set; }
 
+    private void Start()
+    {
+    }
+
     private void Awake()
     {
         if (Instance != null && Instance != this) Destroy(gameObject);
